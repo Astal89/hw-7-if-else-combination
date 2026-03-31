@@ -11,15 +11,17 @@ void main() {
 
     System.out.println("Задача 2");
     clientOS = 1;
-    int releaseYear = 2014;
-    if (clientOS == 0 && releaseYear < 2015) {
+    int clientDeviceYear = 2015;
+    if (clientOS == 0 && clientDeviceYear < 2015) {
         System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
     } else if (clientOS == 0) {
         System.out.println("Установите версию приложения для iOS по ссылке.");
-    } else if (clientOS == 1 && releaseYear < 2015) {
+    } else if (clientOS == 1 && clientDeviceYear < 2015) {
         System.out.println("Установите облегченную версию приложения для Android по ссылке.");
     } else if (clientOS == 1) {
         System.out.println("Установите версию приложения для Android по ссылке.");
+    } else {
+        System.out.println("Не удалось определить версию ОС.");
     }
 
     System.out.println("Задача 3");
@@ -37,12 +39,12 @@ void main() {
     }
 
     System.out.println("Задача 4");
-    int delyveryDistance = 95;
-    if (delyveryDistance <= 20) {
+    int deliveryDistance = 95;
+    if (deliveryDistance <= 20) {
         System.out.println("Потребуется дней: 1");
-    } else if (delyveryDistance > 20 && delyveryDistance <= 60) {
+    } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
         System.out.println("Потребуется дней: 2");
-    } else if (delyveryDistance > 60 && delyveryDistance <= 100) {
+    } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
         System.out.println("Потребуется дней: 3");
     } else {
         System.out.println("Доставка не выполняется.");
